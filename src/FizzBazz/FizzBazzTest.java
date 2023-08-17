@@ -1,5 +1,7 @@
 package FizzBazz;
+
 import java.util.List;
+import java.util.TreeSet;
 
 
 public class FizzBazzTest {
@@ -17,11 +19,12 @@ public class FizzBazzTest {
             t.start();
         }
 
-
         for (int i = 0; i < 100; i++) {
             for (FizzBazz t : threads) {
                 t.number(i);
+                Thread.sleep(200);
             }
+
 
             while (true) {
                 int processed = 0;

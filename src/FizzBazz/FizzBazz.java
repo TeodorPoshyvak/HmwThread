@@ -25,19 +25,19 @@ public class FizzBazz extends Thread {
     }
 
     public static void fizz() {
-        if (n % 3 == 0) {
+        if (n % 3 == 0 && n != 0) {
             ls.add("fizz");
         }
     }
 
     public static void bazz() {
-        if (n % 5 == 0) {
+        if (n % 5 == 0 && n != 0) {
             ls.add("buzz");
         }
     }
 
     public static void fizzBazz() {
-        if (n % 3 == 0 && n % 5 == 0) {
+        if (n % 3 == 0 && n % 5 == 0 && n != 0) {
             ls.add("fizzbuzz");
         }
     }
@@ -58,7 +58,7 @@ public class FizzBazz extends Thread {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
