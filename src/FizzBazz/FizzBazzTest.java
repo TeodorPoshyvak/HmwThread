@@ -1,12 +1,10 @@
 package FizzBazz;
-
 import java.util.List;
-import java.util.TreeSet;
+
 
 
 public class FizzBazzTest {
     public static void main(String[] args) throws InterruptedException {
-        Object monitor = new Object();
 
         FizzBazz npFizz = new FizzBazz((n) -> FizzBazz.fizz());
         FizzBazz npBazz = new FizzBazz((n) -> FizzBazz.bazz());

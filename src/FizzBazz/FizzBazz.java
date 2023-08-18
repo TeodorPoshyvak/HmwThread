@@ -25,13 +25,13 @@ public class FizzBazz extends Thread {
     }
 
     public static void fizz() {
-        if (n % 3 == 0 && n != 0) {
+        if (n % 3 == 0 && n % 5 != 0 & n != 0) {
             ls.add("fizz");
         }
     }
 
     public static void bazz() {
-        if (n % 5 == 0 && n != 0) {
+        if (n % 5 == 0 && n % 3 != 0 & n != 0) {
             ls.add("buzz");
         }
     }
